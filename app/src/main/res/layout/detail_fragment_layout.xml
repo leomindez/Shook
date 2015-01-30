@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/observableScroll"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardview_image_height_size"
+        android:id="@+id/detail_image"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/user_circle_image_size"
+            android:layout_height="@dimen/user_circle_image_size"
+            android:layout_margin="@dimen/user_image_padding"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/detail_user_image"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="hasidhadhfudbsubv.dbsbcvasfh"
+            android:padding="@dimen/detail_text_padding"
+            android:gravity="center|left"
+            android:id="@+id/detail_username"
+            />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ñuhsfuhdsufhaudsuhfds."
+            android:padding="@dimen/activity_horizontal_margin"
+            android:gravity="left"
+            android:id="@+id/detail_book_title"
+            android:textSize="@dimen/book_title_text_size"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dai.jfndjksfnds.kfnsfds"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:gravity="left"
+        android:id="@+id/detail_book_author"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dai.jfndjksfnds.kfnsfds"
+        android:padding="@dimen/gridview_horizontal_spacing_size"
+        android:gravity="left"
+        android:id="@+id/detail_book_desc"
+        android:textSize="@dimen/book_desc_text_size"
+        />
+
+</LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offer_button_title"
+        android:id="@+id/sendRequestButton"
+        android:background="@color/primaryColorDark"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

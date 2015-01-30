@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh_layout_container"
+        >
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/timeline_container"
+        android:numColumns="1"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/gridview_horizontal_spacing_size"
+        android:verticalSpacing="@dimen/gridview_vertical_spacing_size"
+        tools:listitem="@layout/book_card_view_layout"
+        />
+
+  </android.support.v4.widget.SwipeRefreshLayout>
+    <com.melnykov.fab.FloatingActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_add_white"
+        fab:fab_colorNormal="@color/primaryColorDark"
+        fab:fab_colorPressed="@color/primaryColor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+

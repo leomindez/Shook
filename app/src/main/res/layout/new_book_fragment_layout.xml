@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/new_book_text_edit_padding"
+        android:layout_margin="@dimen/new_book_text_edit_padding"
+        android:hint="@string/new_book_title_hint"
+        android:id="@+id/title_edit" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/new_book_text_edit_padding"
+        android:layout_margin="@dimen/new_book_text_edit_padding"
+        android:hint="@string/new_book_author_hint"
+        android:id="@+id/author_edit" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/desc_edit"
+        android:padding="@dimen/new_book_text_edit_padding"
+        android:layout_margin="@dimen/new_book_text_edit_padding"
+        android:hint="@string/new_book_description_hint"
+        android:layout_gravity="center_horizontal" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_book_image_height"
+        android:id="@+id/cover_book_container"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/new_book_text_edit_padding"
+        android:scaleType="fitXY"
+
+        />
+
+</LinearLayout>
